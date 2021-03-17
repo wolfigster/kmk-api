@@ -21,6 +21,10 @@ app.get('/', (req, res) => {
   res.json({ message: 'KMK API'})
 })
 
+require('./routes/category.routes.js')(app)
+require('./routes/person.routes.js')(app)
+require('./routes/game.routes.js')(app)
+
 // set port, listen for requests
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
