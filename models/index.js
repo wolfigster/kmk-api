@@ -8,5 +8,6 @@ db.mongoose = mongoose
 db.url = dbConfig.url
 
 db.categories = require('./category.model.js')(mongoose)
+db.persons = require('./person.model.js')(mongoose)
 
 module.exports = db
