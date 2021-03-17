@@ -9,5 +9,6 @@ db.url = dbConfig.url
 
 db.categories = require('./category.model.js')(mongoose)
 db.persons = require('./person.model.js')(mongoose)
+db.games = require('./game.model.js')(mongoose)
 
 module.exports = db
