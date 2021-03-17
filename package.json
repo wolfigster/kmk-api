@@ -1,0 +1,36 @@
+{
+  "name": "kmk-api",
+  "version": "1.0.0",
+  "description": "Restful CRUD API with Node.js, Express and MongoDB for Kiss Marry Kill",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolfigster/kmk-api.git"
+  },
+  "keywords": [
+    "kiss marry kill",
+    "kiss",
+    "marry",
+    "kill",
+    "game",
+    "nodejs",
+    "express",
+    "rest",
+    "api"
+  ],
+  "author": "wolfig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wolfigster/kmk-api/issues"
+  },
+  "homepage": "https://github.com/wolfigster/kmk-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15"
+  }
+}
