@@ -6,6 +6,7 @@ module.exports = mongoose => {
         name: String,
         category: { type: mongoose.Schema.Types.ObjectId, ref: 'Category' },
         imageURL: String,
+        info: String,
         kiss: Number,
         marry: Number,
         kill: Number
