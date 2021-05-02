@@ -15,6 +15,7 @@ exports.create = (req, res) => {
     category: req.body.category,
     imageURL: req.body.imageURL,
     info: req.body.info,
+    approved: false,
     kill: 0,
     marry: 0,
     kiss: 0
@@ -36,7 +37,11 @@ exports.create = (req, res) => {
 // Retrieve all Persons from the database
 exports.findAll = (req, res) => {
   const category = req.query.category
-  const condition = category ? { 'category': category } : {}
+  const approved = req.query.approved
+  const condition = approved !== 'apr' ? { 'approved': true } : {}
+  if (category) {
+    condition.category = category
+  }
 
   Person.find(condition)
     .then(data => {

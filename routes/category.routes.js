@@ -21,5 +21,5 @@ module.exports = app => {
   // Delete all Categories
   router.delete('/', categories.deleteAll)
 
-  app.use('/api/categories', router)
+  app.use('/categories', router)
 }
